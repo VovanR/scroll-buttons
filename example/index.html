@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    .list {
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+    }
+
+    .list__scroll {
+        height: 100px;
+        overflow: auto;
+        position: relative;
+        box-shadow: 0 0 0 1px blue;
+        margin-bottom: 10px;
+    }
+</style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="list__scroll js-list__scroll">
+            <ul class="list js-list">
+            </ul>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.18/require.min.js"></script>
+        <script>
+            require.config({
+                paths: {
+                    jquery: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min',
+                    lodash: 'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.9.3/lodash.min',
+                    ScrollButtons: 'https://raw.githubusercontent.com/VovanR/scroll-to-item/master/index',
+                    app: './js/app',
+                },
+            });
+
+            require(['app']);
+        </script>
+    </body>
+</html>

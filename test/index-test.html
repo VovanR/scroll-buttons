@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>index-test</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+
+<style>
+    .list {
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+    }
+
+    .list__scroll {
+        height: 30px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 0 0 1px blue;
+    }
+</style>
+    </head>
+    <body>
+        <div id="mocha">
+            <p><a href=".">Index</a></p>
+        </div>
+
+        <div id="messages"></div>
+
+        <div id="fixtures"></div>
+
+        <div id="fixture-template" style="display: none">
+            <div class="list__scroll js-list__scroll">
+                <ul class="list js-list">
+                </ul>
+            </div>
+        </div>
+
+        <script src="../node_modules/mocha/mocha.js"></script>
+        <script src="../node_modules/requirejs/require.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script>
+        requirejs.config.baseUrl = './';
+        requirejs(['../common'], function (common) {
+            requirejs(['./index-test']);
+        });
+        </script>
+    </body>
+</html>
