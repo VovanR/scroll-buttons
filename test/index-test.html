@@ -21,6 +21,26 @@
         position: relative;
         box-shadow: 0 0 0 1px blue;
     }
+
+    .list__container {
+        position: relative;
+    }
+
+    .scroll-buttons__button {
+        height: 10px;
+        background-color: lime;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+
+    .scroll-buttons__button_direction_up {
+        top: 0;
+    }
+
+    .scroll-buttons__button_direction_down {
+        bottom: 0;
+    }
 </style>
     </head>
     <body>
@@ -33,9 +53,21 @@
         <div id="fixtures"></div>
 
         <div id="fixture-template" style="display: none">
-            <div class="list__scroll js-list__scroll">
-                <ul class="list js-list">
-                </ul>
+            <div class="list__container">
+                <div
+                    class="scroll-buttons__button scroll-buttons__button_direction_up js-scroll-buttons__button"
+                    style="display: none;"
+                ></div>
+
+                <div class="list__scroll js-list__scroll">
+                    <ul class="list js-list">
+                    </ul>
+                </div>
+
+                <div
+                    class="scroll-buttons__button scroll-buttons__button_direction_down js-scroll-buttons__button"
+                    style="display: none;"
+                ></div>
             </div>
         </div>
 
