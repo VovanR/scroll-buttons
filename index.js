@@ -1,4 +1,6 @@
 /**
+ * Scrolls list on buttons hover
+ *
  * @module ScrollButtons
  * @author Vladimir Rodkin <mail@vovanr.com>
  */
@@ -46,16 +48,20 @@ define([
          */
         _bindControls: function () {
             var _this = this;
-            this._$buttons.hover(function () {
-                var $this = $(this);
-                _this._amount = $this.data('scroll-amount');
-                _this._scroll();
-            }, function () {
-                _this._amount = '';
-            });
+            this._$buttons
+                .on('mouseenter.scrollButtons', function () {
+                    var $this = $(this);
+                    _this._amount = $this.data('scroll-amount');
+                    _this._scroll();
+                })
+                .on('mouseleave.scrollButtons', function () {
+                    _this._amount = '';
+                });
         },
 
         /**
+         * Show buttons
+         *
          * @public
          */
         show: function () {
@@ -63,6 +69,8 @@ define([
         },
 
         /**
+         * Hide buttons
+         *
          * @public
          */
         hide: function () {
@@ -70,7 +78,7 @@ define([
         },
 
         /**
-         * Прокрутка списка экскурсий
+         * Scroll list
          *
          * @private
          */
@@ -86,9 +94,12 @@ define([
         },
 
         /**
+         * Destroy instance
+         *
          * @public
          */
         destroy: function () {
+            this._$buttons.off('mouseenter.scrollButtons mouseleave.scrollButtons');
             this._amount = '';
             this._$scroll = null;
         },

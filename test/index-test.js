@@ -170,6 +170,20 @@ requirejs([
                 m.destroy();
                 assert.equal(m._amount, '');
             });
+
+            it('should unbind buttons', function (done) {
+                var m = module();
+                sinon.stub(m, '_scroll');
+                var $down = $('#fixtures .scroll-buttons__button_direction_down');
+                var $up = $('#fixtures .scroll-buttons__button_direction_up');
+                m.destroy();
+                $down.trigger('mouseover');
+                $up.trigger('mouseover');
+                setTimeout(function () {
+                    assert.notOk(m._scroll.called);
+                    done();
+                }, 100);
+            });
         });
     });
 
