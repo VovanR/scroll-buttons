@@ -27,9 +27,33 @@ define([
          * @private
          */
         _initialize: function () {
-            this._ScrollButtons = new ScrollButtons({
+            this._scrollButtons = new ScrollButtons({
                 $scroll: $('.js-list__scroll'),
+                $buttons: $('.js-scroll-buttons__button'),
             });
+            var _this = this;
+            $('.js-list__container')
+                .mouseenter(function () {
+                    _this._scrollButtons.show();
+                })
+                .mouseleave(function () {
+                    _this._scrollButtons.hide();
+                });
+            this._fillList(100);
+        },
+
+        /**
+         * @param {Number} count
+         * @private
+         */
+        _fillList: function (count) {
+            var $list = $('.js-list');
+            var items = [];
+            _.times(count, function (i) {
+                items.push('<li>Lorem ipsum dolor sit amet</li>');
+            });
+            items = items.join('');
+            $list.html(items);
         },
     };
 

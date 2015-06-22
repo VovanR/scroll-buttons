@@ -4,6 +4,17 @@
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
 
+## Usage
+
+```javascript
+var scrollButtons = new ScrollButtons({
+    $scroll: $('.js-list__scroll'),
+    $buttons: $('.js-scroll-buttons__button'),
+});
+```
+
+![](preview/example.gif)
+
 ## Development
 
 ### Initialize

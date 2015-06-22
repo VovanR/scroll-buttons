@@ -13,7 +13,6 @@
 <style>
     .list {
         margin: 0;
-        padding: 0;
         height: 1000px;
     }
 
@@ -22,7 +21,27 @@
         overflow: auto;
         position: relative;
         box-shadow: 0 0 0 1px blue;
-        margin-bottom: 10px;
+    }
+
+    .list__container {
+        position: relative;
+    }
+
+    .scroll-buttons__button {
+        height: 10px;
+        background-color: lime;
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .scroll-buttons__button_direction_up {
+        top: 0;
+    }
+
+    .scroll-buttons__button_direction_down {
+        bottom: 0;
     }
 </style>
     </head>
@@ -31,9 +50,23 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="list__scroll js-list__scroll">
-            <ul class="list js-list">
-            </ul>
+        <div class="list__container js-list__container">
+            <div
+                class="scroll-buttons__button scroll-buttons__button_direction_up js-scroll-buttons__button"
+                data-scroll-amount="-=50"
+                style="display: none;"
+            ></div>
+
+            <div class="list__scroll js-list__scroll">
+                <ol class="list js-list">
+                </ol>
+            </div>
+
+            <div
+                class="scroll-buttons__button scroll-buttons__button_direction_down js-scroll-buttons__button"
+                data-scroll-amount="+=50"
+                style="display: none;"
+            ></div>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.18/require.min.js"></script>
