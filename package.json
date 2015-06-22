@@ -1,7 +1,7 @@
 {
   "name": "ScrollButtons",
   "description": "Scrolls list on buttons hover",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Vladimir Rodkin <mail@vovanr.com>",
   "repository": {
     "type": "git",
