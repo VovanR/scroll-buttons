@@ -32,6 +32,7 @@
         position: absolute;
         right: 0;
         left: 0;
+        z-index: 1;
     }
 
     .scroll-buttons__button_direction_up {
@@ -56,6 +57,7 @@
             <div class="list__container">
                 <div
                     class="scroll-buttons__button scroll-buttons__button_direction_up js-scroll-buttons__button"
+                    data-scroll-amount="-=50"
                     style="display: none;"
                 ></div>
 
@@ -66,6 +68,7 @@
 
                 <div
                     class="scroll-buttons__button scroll-buttons__button_direction_down js-scroll-buttons__button"
+                    data-scroll-amount="+=50"
                     style="display: none;"
                 ></div>
             </div>
