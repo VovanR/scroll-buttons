@@ -1,5 +1,7 @@
 # ScrollButtons
 
+[![Commitizen friendly][commitizen-image]][commitizen-url]
+
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
@@ -42,6 +44,9 @@ npm run lint
 
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
+
+[commitizen-url]: http://commitizen.github.io/cz-cli/
+[commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/VovanR/scroll-buttons
 [travis-image]: http://img.shields.io/travis/VovanR/scroll-buttons.svg
