@@ -2,6 +2,7 @@
 
 [![Commitizen friendly][commitizen-image]][commitizen-url]
 
+[![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
@@ -47,6 +48,9 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
 [commitizen-url]: http://commitizen.github.io/cz-cli/
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
+
+[npm-url]: https://npmjs.org/package/scroll-buttons
+[npm-image]: http://img.shields.io/npm/v/scroll-buttons.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/VovanR/scroll-buttons
 [travis-image]: http://img.shields.io/travis/VovanR/scroll-buttons.svg
