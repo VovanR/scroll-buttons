@@ -5,13 +5,11 @@ requirejs([
 	'jquery',
 	'chai',
 	'sinon',
-	'lodash',
 	'../index'
 ], function (
 	$,
 	chai,
 	sinon,
-	_,
 	ScrollButtons
 ) {
 	'use strict';
@@ -26,13 +24,9 @@ requirejs([
 		var module = function (o) {
 			var $fixtures = $('#fixtures');
 
-			o = _.defaults(
-				o || {},
-				{
-					$scroll: $fixtures.find('.js-list__scroll'),
-					$buttons: $fixtures.find('.js-scroll-buttons__button')
-				}
-			);
+			o = o || {};
+			o.$scroll = o.$scroll || $fixtures.find('.js-list__scroll');
+			o.$buttons = o.$buttons || $fixtures.find('.js-scroll-buttons__button');
 
 			return new ScrollButtons(o);
 		};
