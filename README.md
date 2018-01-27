@@ -1,6 +1,7 @@
 # scroll-buttons
 
 [![Commitizen friendly][commitizen-image]][commitizen-url]
+[![XO code style][codestyle-image]][codestyle-url]
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -58,6 +59,9 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
 [commitizen-url]: http://commitizen.github.io/cz-cli/
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
+
+[codestyle-url]: https://github.com/sindresorhus/xo
+[codestyle-image]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square
 
 [npm-url]: https://npmjs.org/package/scroll-buttons
 [npm-image]: http://img.shields.io/npm/v/scroll-buttons.svg?style=flat-square
