@@ -19,6 +19,7 @@ requirejs([
 
     describe('ScrollButtons', function () {
         /**
+         * @param {Object} o
          */
         var module = function (o) {
             var $fixtures = $('#fixtures');
