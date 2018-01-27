@@ -1,4 +1,4 @@
-# ScrollButtons
+# scroll-buttons
 
 [![Commitizen friendly][commitizen-image]][commitizen-url]
 
@@ -7,11 +7,19 @@
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
 
-> Scrolls list on buttons hover ([Demo](https://jsfiddle.net/VovanR/7m4838yz/))
+> Scrolls list on buttons hover ([demo][demo-url])
+
+## Install
+
+```shell
+npm install --save scroll-buttons
+```
 
 ## Usage
 
 ```javascript
+var ScrollButtons = require('scroll-buttons');
+
 var scrollButtons = new ScrollButtons({
     $scroll: $('.js-list__scroll'),
     $buttons: $('.js-scroll-buttons__button'),
@@ -23,28 +31,30 @@ var scrollButtons = new ScrollButtons({
 ## Development
 
 ### Initialize
-```sh
+```shell
 npm i
 ```
 
 ### Test
-*In console*
-```sh
+*In terminal*
+```shell
 npm run test
 ```
 
 *In browser*
-```sh
+```shell
 open ./text/index-test.html
 ```
 
 ### Lint
-```sh
+```shell
 npm run lint
 ```
 
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
+
+[demo-url]: https://jsfiddle.net/VovanR/7m4838yz/
 
 [commitizen-url]: http://commitizen.github.io/cz-cli/
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
