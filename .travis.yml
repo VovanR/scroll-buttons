@@ -1,6 +1,8 @@
-sudo: false
 language: node_js
 node_js:
-  - '0.12'
-  - '0.10'
-  - 'iojs-v1'
+  - v9
+  - v8
+  - v7
+  - v6
+  - v5
+  - v4
