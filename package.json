@@ -4,7 +4,7 @@
   "description": "Scrolls list on buttons hover",
   "license": "MIT",
   "repository": "VovanR/scroll-buttons",
-  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
+  "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
   "scripts": {
     "prepush": "npm test && npm run lint",
     "precommit": "npm test && npm run lint",
@@ -25,17 +25,17 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
-    "conventional-changelog-cli": "^1.3.5",
+    "conventional-changelog-cli": "^1.3.15",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^0.14.3",
     "jquery": "^3.3.1",
-    "mocha": "^5.0.0",
+    "mocha": "^5.0.1",
     "mocha-phantomjs": "^4.1.0",
     "mversion": "^1.10.1",
     "phantomjs": "^2.1.7",
     "requirejs": "^2.3.5",
-    "sinon": "^4.2.2",
-    "xo": "^0.18.2"
+    "sinon": "^4.4.2",
+    "xo": "^0.20.3"
   },
   "bugs": {
     "url": "https://github.com/VovanR/scroll-buttons/issues"
