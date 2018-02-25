@@ -1,14 +1,26 @@
-# ScrollButtons
+# scroll-buttons
 
+[![Commitizen friendly][commitizen-image]][commitizen-url]
+[![XO code style][codestyle-image]][codestyle-url]
+
+[![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
 
-> Scrolls list on buttons hover ([Demo](https://jsfiddle.net/VovanR/7m4838yz/))
+> Scrolls list on buttons hover ([demo][demo-url])
+
+## Install
+
+```shell
+npm install --save scroll-buttons
+```
 
 ## Usage
 
 ```javascript
+var ScrollButtons = require('scroll-buttons');
+
 var scrollButtons = new ScrollButtons({
     $scroll: $('.js-list__scroll'),
     $buttons: $('.js-scroll-buttons__button'),
@@ -20,28 +32,39 @@ var scrollButtons = new ScrollButtons({
 ## Development
 
 ### Initialize
-```sh
+```shell
 npm i
 ```
 
 ### Test
-*In console*
-```sh
+*In terminal*
+```shell
 npm run test
 ```
 
 *In browser*
-```sh
+```shell
 open ./text/index-test.html
 ```
 
 ### Lint
-```sh
+```shell
 npm run lint
 ```
 
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
+
+[demo-url]: https://jsfiddle.net/VovanR/7m4838yz/
+
+[commitizen-url]: http://commitizen.github.io/cz-cli/
+[commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
+
+[codestyle-url]: https://github.com/sindresorhus/xo
+[codestyle-image]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square
+
+[npm-url]: https://npmjs.org/package/scroll-buttons
+[npm-image]: http://img.shields.io/npm/v/scroll-buttons.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/VovanR/scroll-buttons
 [travis-image]: http://img.shields.io/travis/VovanR/scroll-buttons.svg

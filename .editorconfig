@@ -1,6 +1,3 @@
-# This file is for unifying the coding style for different editors and IDEs
-# editorconfig.org
-
 root = true
 
 [*]
@@ -12,13 +9,9 @@ insert_final_newline = true
 indent_style = space
 indent_size = 4
 
-[Makefile]
-trim_trailing_whitespace = false
-indent_style = tab
-
-[*.js]
+[{*.json,*.yml}]
 indent_style = space
-indent_size = 4
-
-[*.json]
 indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
